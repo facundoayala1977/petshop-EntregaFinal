@@ -26,33 +26,21 @@ export const CarritoProvider = ({ children }) => {
 
     }, [carrito]);
 
-    const agregarAlCarrito = (producto, cantidad = 1) => {
-
-        const productoExistente = carrito.find(
-            (item) => item.id === producto.id
-        );
+    const agregarAlCarrito = (producto) => {
+        const productoExistente = carrito.find(item => item.id === producto.id);
 
         if (productoExistente) {
-            const carritoActualizado = carrito.map((item) =>
+            const carritoActualizado = carrito.map(item =>
                 item.id === producto.id
-                    ? { ...item, cantidad: item.cantidad + cantidad }
+                    ? { ...item, cantidad: item.cantidad + 1 }
                     : item
             );
-
             setCarrito(carritoActualizado);
-
         } else {
-
-            setCarrito([
-                ...carrito,
-                {
-                    ...producto,
-                    cantidad
-                }
-            ]);
-
+            setCarrito([...carrito, { ...producto, cantidad: 1 }]);
         }
     };
+
 
     const disminuirCantidad = (id) => {
         const producto = carrito.find(
