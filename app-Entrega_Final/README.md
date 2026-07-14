@@ -46,7 +46,7 @@ Permite visualizar productos, buscar por nombre, filtrar por categorías, gestio
 Clonar el repositorio
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/facundoayala1977/petshop-EntregaFinal/tree/master/app-Entrega_Final
 ```
 
 Instalar dependencias
