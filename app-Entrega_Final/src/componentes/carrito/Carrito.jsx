@@ -68,10 +68,9 @@ function Carrito() {
               <input
                 type="text"
                 placeholder="Ingresa tu cupón de descuento"
-                disabled
                 className={styles.inputCupon}
               />
-              <button className={styles.btnCupon} disabled>
+              <button className={styles.btnCupon} >
                 Aplicar
               </button>
             </div>
