@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-principal: #0033A0;
+  --azul-oscuro: #001848;
+  --amarillo-principal: #FFCC00;
+  --amarillo-hover: #FFD84D;
+  --fondo-claro: #f4f6fb;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: sans-serif;
+}

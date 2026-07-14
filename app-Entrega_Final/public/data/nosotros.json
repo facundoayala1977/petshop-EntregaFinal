@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juan Pérez",
+        "email": "juanperez@mail.com",
+        "cargo": "Veterinario",
+        "imagen": "/data/images/JuanPerezVeterinario.png"
+    },
+    {
+       "id": 2,
+        "nombre": "María López",
+        "email": "marialopez@mail.com",
+        "cargo": "Atención al Cliente",
+        "imagen": "/data/images/MariaLopezAtAlCliente.png" 
+    },
+    {
+        "id": 3,
+        "nombre": "Carlos Gómez",
+        "email": "carlosgomez@mail.com",
+        "cargo": "Cuidador",
+        "imagen": "/data/images/CarlosGomezCuidador.png"
+    }
+]

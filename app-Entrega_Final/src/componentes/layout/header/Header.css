@@ -1,0 +1,28 @@
+.header {
+  background-color: #001848;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  align-items: center;
+  color: #ffcc00;
+  font-size: clamp(48px, 6vw, 64px);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: none;
+}

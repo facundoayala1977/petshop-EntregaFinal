@@ -1,0 +1,18 @@
+#Ejercicio Clase 2
+#Pedir nombre, apellido, edad y correo electrónico. Mostrar en una tarjeta.
+
+nombre = input ("Ingrese su nombre: ")
+apellido = input ("Ingrese su apellido: ")
+edad = input ("Ingrese su edad: ")
+email = input ("Ingrese su correo electrónico: ")
+
+if nombre and apellido and email and edad != "":
+    print ("========================================")
+    print ("                 CLIENTE                ")
+    print ("========================================")
+    print ( "Nombre:\t\t\t " , nombre.title())
+    print ("Apellido:\t\t " , apellido.title())
+    print ("Edad:\t\t\t ", (edad) + " años")
+    print ("Correo electrónico:\t ", email.strip())
+else:
+    print ("Debe completar todos los campos...")

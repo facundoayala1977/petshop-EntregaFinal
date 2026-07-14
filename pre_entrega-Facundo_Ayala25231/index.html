@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Peludito's Pet Shop: alimentos, accesorios y cuidados para tus mascotas en Ituzaingó, Corrientes.">
+    <link rel="icon" href="./imagenes/pata.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Alan+Sans:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <script src="./js/script.js"></script>
+
+
+    <title>Peluditos Pet Shop</title>
+</head>
+
+<body>
+    <!------------------- Este es el cuerpo principal de la página ------------------------------------------------------------->
+    <header id="inicio">
+        <!----------------------------------------- Encabezado ----------------------------------------------------------------->
+        <div>
+            <h1 class="titulo-portada">Peludito's Pet Shop</h1>
+        </div>
+
+        <div class="logo">
+            <img id="portada" src="./imagenes/logo_peluditos.png" alt="Logo de Pet Shop" width="600" height="400">
+        </div>
+
+        <nav>
+            <!--------------------------------------- Barra de  navegacion --------------------------------------------------->
+
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="mi_carrito">
+            <h2>Mi Carrito (0)</h2>
+            <div>
+                <section class="carrito">
+
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!---------------------------------------------- Main --------------------------------------------------------------->
+
+        <section class="video">
+            <!-------------------------------------- Video con Subtítulos --------------------------------------------------->
+            <div class="presentacion">
+                <video controls poster="./imagenes/logo_peluditos.png">
+                    <source src="./imagenes/puppy_dog_pals.mp4" type="video/mp4">
+                    <track src="./imagenes/puppy_dog_pals.vtt" kind="subtitles" srclang="es" label="Español" default>
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+        </section>
+
+
+        <h2 id="productos">Productos</h2>
+
+        <section class="productos">
+            <!--------------------------------------- Tarjetas de Productos del Local -------------------------------------->
+
+            <div class="card">
+                <img src="./imagenes/alimento_seco_perros.png" alt="Imagen alimento seco perros">
+                <h3>Dogui</h3>
+                <p>Alimento para perros adulto seco, sabor: carne. Peso 8 kg.</p>
+                <span class="precio">$ 15000</span>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="./imagenes/alimento_seco_gatos.png" alt="Imagen alimento seco gatos">
+                <h3>CatChow</h3>
+                <p>Alimento para gatos adulto seco, sabor: carne. Peso 5 kg.</p>
+                <span class="precio">$ 12000</span>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="./imagenes/alimento_humedo_perros.png" alt="Imagen alimento humedo perros">
+                <h3>Vital Can</h3>
+                <p>Alimento para perros húmedo, sabor: souflé de carne. Peso 500 gr.</p>
+                <span class="precio">$ 10000</span>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="./imagenes/alimento_humedo_gatos.png" alt="Imagen alimento humedo gatos">
+                <h3>Vital Can</h3>
+                <p>Alimento para gatos húmedo, sabor: souflé de merluza. Peso 500 gr.</p>
+                <span class="precio">$ 9500</span>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="./imagenes/antiparasitario_gato.png" alt="Imagen antiparasitario gatos">
+                <h3>Meltra</h3>
+                <p>Antiparasitario para felinos de 4 a 8 kg.</p>
+                <span class="precio">$ 19000</span>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="./imagenes/antiparasitario_perro.png" alt="Imagen antiparasitario perros">
+                <h3>Bravecto</h3>
+                <p>Antiparasitario para caninos de 10 a 30 kg.</p>
+                <span class="precio">$ 22000</span>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="./imagenes/antipulgas_gatos.png" alt="Imagen antipulgas gatos">
+                <h3>Feline</h3>
+                <p>Pipeta antipulgas para felinos de 4 a 8 kg.</p>
+                <span class="precio">$ 18000</span>
+                <button>Añadir al carrito</button>
+            </div>
+
+            <div class="card">
+                <img src="./imagenes/antipulgas_perros.png" alt="Imagen antipulgas perros">
+                <h3>Meltra</h3>
+                <p>Pipeta antipulgas para caninos de 10 a 30 kg.</p>
+                <span class="precio">$ 20000</span>
+                <button>Añadir al carrito</button>
+            </div>
+
+        </section>
+
+        <section class="comentario">
+            <h2>Comentarios</h2>
+            <!------------------------------ Comentarios o reseñas de compras y visitas ------------------------------------>
+            <section id="comentarios" class="reseñas">
+                <h3>Reseñas de nuestros clientes</h3>
+                <div class="contenedor-reseñas">
+                    <div class="reseña">
+                        <p>"Excelente atención y productos de primera calidad. Mi perro feliz con su nuevo alimento!!!"
+                        </p>
+                        <h4>- Laura Gómez</h4>
+                    </div>
+
+                    <div class="reseña">
+                        <p>"Muy buena presentación y precios accesibles. Un lugar muy recomendable!!!"</p>
+                        <h4>- Martín Ríos</h4>
+                    </div>
+
+                    <div class="reseña">
+                        <p>"Me encantó el servicio, además me ayudaron a elegir el antiparasitario correcto para mi
+                            gato."</p>
+                        <h4>- Sofía Pérez</h4>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <section class="multimedia">
+            <!----------------------------- Ubicación del local ------------------------------------------------------------>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1820.173981244273!2d-56.67620620045537!3d-27.571388069230583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-27.571273047347745!2d-56.674858928170956!5e0!3m2!1ses!2sar!4v1757467605396!5m2!1ses!2sar"
+                    title="Ubicación del local Peludito's Pet Shop" allowfullscreen loading="lazy" width="400"
+                    height="250" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="video-consejo">
+                <!--------------------------------- Consejo para los usuarios -------------------------------------------------->
+                <iframe src="https://www.youtube.com/embed/Lcab-14tC_I"
+                    title="Cómo Juntar un PERRO y un GATO sin que se MATEN"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    width="400" height="250" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="formulario">
+
+            <!------------------------------ Formulario de Contacto -------------------------------------------------------->
+
+            <form action="https://formspree.io/f/xovnrajk" method="post">
+                <fieldset class="titulo">
+                    <legend>
+                        <h2 id="contacto">Contacto</h2>
+                    </legend>
+                    <fieldset class="info-personal">
+                        <legend>Información Personal</legend>
+                        <div>
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" placeholder="Ingrese su nombre acá" id="nombre" name="nombre" required>
+                        </div>
+                        <div>
+                            <label for="email">Correo electrónico: </label>
+                            <input type="email" placeholder="Ingrese su email" id="email" name="email" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="mensaje">
+                        <legend>Mensaje</legend>
+                        <label for="mensaje">Mensaje: </label>
+                        <textarea type="text" placeholder="Consultas o Comentarios" id="mensaje" name="mensaje"
+                            required></textarea>
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+            </form>
+            </fieldset>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <!---------------------------------------------- Pie de página ----------------------------------------------->
+
+        <div class="contenedor-footer">
+
+            <!-- Redes sociales -->
+            <div class="redes">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="./imagenes/instagram.png" alt="Instagram" class="icono-red">
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="./imagenes/facebook.png" alt="Facebook" class="icono-red">
+                </a>
+
+                <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="./imagenes/x.png" alt="X (Twitter)" class="icono-red">
+                </a>
+
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="./imagenes/youtube.png" alt="YouTube" class="icono-red">
+                </a>
+            </div>
+
+            <!-- Navegación -->
+            <ul class="pie">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <!-- Dirección -->
+            <div class="direccion">
+                <p>
+                    Calle "E", Casa 11<br>
+                    Barrio Gral. San Martín<br>
+                    Ituzaingó - Corrientes
+                </p>
+            </div>
+
+        </div>
+
+        <p class="reservado">(R) 2025. Todos los derechos reservados.</p>
+
+    </footer>
+
+</body>
+
+</html>
