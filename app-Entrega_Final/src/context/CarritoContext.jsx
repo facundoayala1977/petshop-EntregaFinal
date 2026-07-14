@@ -42,27 +42,22 @@ export const CarritoProvider = ({ children }) => {
     };
 
 
+
     const disminuirCantidad = (id) => {
-        const producto = carrito.find(
-            (item) => item.id === id
-        );
+        const producto = carrito.find(item => item.id === id);
 
         if (producto.cantidad === 1) {
             eliminarProducto(id);
         } else {
-            const carritoActualizado = carrito.map(
-                (item) =>
-                    item.id === id
-                        ? {
-                            ...item,
-                            cantidad: item.cantidad - 1
-                        }
-                        : item
+            const carritoActualizado = carrito.map(item =>
+                item.id === id
+                    ? { ...item, cantidad: item.cantidad - 1 }
+                    : item
             );
-
             setCarrito(carritoActualizado);
         }
     };
+
 
     const eliminarProducto = (id) => {
         const nuevoCarrito = carrito.filter(
