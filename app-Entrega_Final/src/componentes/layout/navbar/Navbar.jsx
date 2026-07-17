@@ -8,7 +8,7 @@ function Navbar() {
 
   const { totalProductos } = useContext(CarritoContext);
 
-  const { usuario, cerrarSesion } = useContext(AuthContext);
+  const { usuario, esAdmin, cerrarSesion } = useContext(AuthContext);
 
   const [menuAbierto, setMenuAbierto] = useState(false);
 
@@ -47,6 +47,16 @@ function Navbar() {
               Hola, {usuario.email}
             </li>
 
+            {esAdmin && (
+              <li>
+                <Link
+                  to="/admin"
+                  className={styles.link}
+                >
+                  Administración
+                </Link>
+              </li>
+            )}
             <li>
               <button
                 onClick={cerrarSesion}

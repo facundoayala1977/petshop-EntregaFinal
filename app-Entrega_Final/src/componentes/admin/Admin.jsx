@@ -3,10 +3,14 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/config";
 import FormularioProducto from "./FormularioProducto";
 import ListaProductos from "./ListaProductos";
+import FormularioCupon from "./FormularioCupon";
+import ListaCupones from "./ListaCupones";
 
 function Admin() {
 
     const [productos, setProductos] = useState([]);
+
+    const [cupones, setCupones] = useState([]);
 
     const [productoEditar, setProductoEditar] = useState(null);
 
@@ -45,11 +49,36 @@ function Admin() {
 
     };
 
+    const obtenerCupones = async () => {
+
+        try {
+
+            const cuponesRef = collection(db, "cupones");
+
+            const snapshot = await getDocs(cuponesRef);
+
+            const lista = snapshot.docs.map((doc) => ({
+                id: doc.id,
+                ...doc.data()
+            }));
+
+            setCupones(lista);
+
+        } catch (error) {
+
+            console.error(error);
+
+        }
+
+    };
+
     useEffect(() => {
 
         obtenerProductos();
+        obtenerCupones();
 
     }, []);
+
 
     return (
 
@@ -73,6 +102,17 @@ function Admin() {
                 error={error}
                 setProductoEditar={setProductoEditar}
                 obtenerProductos={obtenerProductos}
+            />
+
+            <hr className="my-5" />
+
+            <FormularioCupon
+                obtenerCupones={obtenerCupones}
+            />
+
+            <ListaCupones
+                cupones={cupones}
+                obtenerCupones={obtenerCupones}
             />
 
         </div>

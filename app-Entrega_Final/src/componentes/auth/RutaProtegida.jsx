@@ -4,10 +4,14 @@ import { AuthContext } from "../../context/AuthContext";
 
 function RutaProtegida({ children }) {
 
-    const { usuario } = useContext(AuthContext);
+    const { usuario, esAdmin } = useContext(AuthContext);
 
     if (!usuario) {
         return <Navigate to="/login" replace />;
+    }
+
+    if (!esAdmin) {
+        return <Navigate to="/" replace />;
     }
 
     return children;

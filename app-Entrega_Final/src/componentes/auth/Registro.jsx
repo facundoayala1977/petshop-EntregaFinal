@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase/config";
+import { db } from "../../firebase/config";
+import { doc, setDoc } from "firebase/firestore";
 
 function Registro() {
 
@@ -13,16 +15,18 @@ function Registro() {
 
         try {
 
-            await createUserWithEmailAndPassword(
+            const credenciales = await createUserWithEmailAndPassword(
                 auth,
                 email,
                 password
             );
 
-            alert("Usuario registrado correctamente.");
+            await setDoc(doc(db, "usuarios", credenciales.user.uid), {
 
-            setEmail("");
-            setPassword("");
+                email: credenciales.user.email,
+                admin: false
+
+            });
 
         } catch (error) {
 
